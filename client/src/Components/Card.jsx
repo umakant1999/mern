@@ -1,23 +1,18 @@
-import React from 'react'
-
-const Card = () => {
+const Card = ({ children, className = "" }) => {
   return (
-    <div>
-        <div className="stat-card  bg-blue-300 p-2 rounded-2xl shadow-2xl cursor-pointer">
-            <div className="stat-top">
-              <div>
-                <p>Total Spent</p>
-{/* 
-                <h3>₹{total.toLocaleString()}</h3> */}
-              </div>
+    <div
+      className={`
+        overflow-hidden
+rounded-xl transition
 
-              <div className="icon orange">
-                {/* <CircleDollarSign size={20} /> */}
-              </div>
-            </div>
-          </div>
+
+
+        ${className}
+      `}
+    >
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

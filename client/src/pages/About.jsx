@@ -276,14 +276,14 @@ const About = () => {
     
       </main>
           <div className="bg-blue-500  min-h-screen ">
-<ResponsiveContainer width="100%" height={300}>
+{/* <ResponsiveContainer width="100%" height={300}>
   <BarChart data={expenses}>
     <XAxis dataKey="category" />
     <YAxis />
     <Tooltip />
     <Bar dataKey="price"/>
   </BarChart>
-</ResponsiveContainer>
+</ResponsiveContainer> */}
         </div>
     </div>
   );
